@@ -1,0 +1,4 @@
+%{
+  "benchfella": {:hex, :benchfella, "0.3.5", "b2122c234117b3f91ed7b43b6e915e19e1ab216971154acd0a80ce0e9b8c05f5", [:mix], [], "hexpm"},
+  "benchwarmer": {:hex, :benchwarmer, "0.0.2", "902e5c020608647b07c38b82103e4af6d2667dfd5d5d13c67382238de6943136", [:mix], [], "hexpm"},
+}

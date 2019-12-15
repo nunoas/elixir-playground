@@ -11,5 +11,6 @@ erl_crash.dump
 /lib/_build
 /lib/test.txt
 .DS_Store
+/bench/snapshots/*/**
 
 
