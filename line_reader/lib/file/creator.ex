@@ -1,0 +1,21 @@
+defmodule File.Creator do
+  def generate(filename) do
+    list = [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+    ]
+
+    case File.open(filename, [:write]) do
+      {:ok, file} ->
+        Enum.each(1..10_000_000, fn n ->
+          text = Enum.at(list, :rand.uniform(4)-1)
+          IO.puts(file, "#{n} #{text}")
+        end)
+        File.close(file)
+      _ ->
+        {:error, "Unable to open file"}
+    end
+  end
+end

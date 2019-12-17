@@ -1,4 +1,4 @@
-defmodule LineReader do
+defmodule Line.Reader do
   # Try #2 -> Enum.at
 
   def get_line(filename, _line) when not is_binary(filename) do

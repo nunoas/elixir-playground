@@ -12,5 +12,5 @@ erl_crash.dump
 /lib/test.txt
 .DS_Store
 /bench/snapshots/*/**
-
+bigfile
 

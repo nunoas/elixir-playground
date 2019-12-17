@@ -20,8 +20,6 @@ defmodule LineReader.MixProject do
 
   # Run "mix help deps" to learn about dependencies.
   defp deps do
-    [
-      {:benchfella, "~> 0.3.5"}
-    ]
+    [ { :benchwarmer, "~> 0.0.2" } ]
   end
 end
