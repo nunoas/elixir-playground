@@ -10,7 +10,7 @@ Run
 
 In iex, type
 
-```LineReader.get_line("./lib/test.txt", LINE_NUMBER)```
+```Line.Reader.get_line("./lib/test.txt", LINE_NUMBER)```
 
 ## Measure Performance
 
